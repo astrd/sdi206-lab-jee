@@ -34,7 +34,7 @@ public class ServetSaludo extends HttpServlet {
     		response.setContentType("text/html");
     		PrintWriter out = response.getWriter();
     		 out.println("<HTML>");
-    		 out.println("<HEAD><TITLE>Holaaaaaa Mundo!</TITLE></HEAD>");
+    		 out.println("<HEAD><TITLE>Hola Mundo!</TITLE></HEAD>");
     		 out.println("<BODY>");
     		 String nombre = (String) request.getParameter("nombre");
     		 if (nombre != null) {
