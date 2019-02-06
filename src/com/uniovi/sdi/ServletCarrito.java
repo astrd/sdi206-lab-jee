@@ -48,7 +48,10 @@ public class ServletCarrito extends HttpServlet {
 			out.println("<HEAD><TITLE>Tienda SDI: carrito</TITLE></HEAD>");
 			out.println("<BODY>");
 			out.println(carritoEnHTML(carrito) + "<br>");			
-			out.println("<a href=\"index.jsp\">Volver</a></BODY></HTML>");
+			// Retornar la vista con parámetro "carrito"
+			request.setAttribute("paresCarrito", carrito);
+			getServletContext().getRequestDispatcher("/vista-carrito.jsp").forward(request,
+			response);
 			
 
 		}
