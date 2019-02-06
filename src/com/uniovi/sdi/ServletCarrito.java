@@ -40,7 +40,7 @@ public class ServletCarrito extends HttpServlet {
 			String producto = request.getParameter("producto");
 			if (producto != null) {
 				insertarEnCarrito(carrito, producto);
-			}
+			} 
 			response.setCharacterEncoding("UTF-8");
 			response.setContentType("text/html");
 			PrintWriter out = response.getWriter();
